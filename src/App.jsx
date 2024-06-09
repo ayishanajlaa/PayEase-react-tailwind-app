@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import PaymentControl from "./components/PaymentControl";
+import PaymentFeatures from "./components/PaymentFeatures";
+import PaymentFooter from "./components/PaymentFooter";
+import PaymentHero from "./components/PaymentHero";
+import PaymentNavbar from "./components/PaymentNavbar";
+import PaymentMethod from "./components/PaymentMethod";
+import ScrollTop from "./components/PaymentScrollTop";
+import PaymentStats from "./components/PaymentStats";
+import ClientTestimonials from "./components/ClientTestimonials";
+import PaymentService from "./components/PaymentService";
 
-function App() {
-  const [count, setCount] = useState(0)
 
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="bg-primary text-white w-full h-full">
+      <PaymentNavbar />
+      <ScrollTop />
+      <div className="container px-5 md:px-10 mx-auto">
+        <PaymentHero />
+        <div className="flex flex-col xs:flex-row flex-wrap items-center justify-between gap-6 md:gap-2 py-20">
+          <PaymentStats number="1000" title="ACTIVE USER" />
+          <PaymentStats number="100" title="TRUSTED BY COMPANY" />
+          <PaymentStats number="$200M" title="TRANSACTION" />
+        </div>
+        <PaymentFeatures />
+        <PaymentControl />
+        <PaymentMethod />
+        <ClientTestimonials />
+        <PaymentService />
+        <PaymentFooter />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default App
+export default App;
