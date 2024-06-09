@@ -1,37 +1,22 @@
 # PaymentApp Website
 
-PaymentApp Website is a static website designed to provide information about the PaymentApp.
+PaymentApp Website is a React-based web application designed to provide information about the PaymentApp.
 
 ## Overview
 
-PaymentApp Website is a simple website that showcases the features and benefits of the PaymentApp. It provides users with information about the app's functionalities, services, and advantages.
+PaymentApp Website is a static website built with React.js and Tailwind CSS. It provides users with information about the features, benefits, and services offered by the PaymentApp.
 
 ## Features
 
 - **Informative Content**: Clearly explains the features and benefits of the PaymentApp.
 - **Responsive Design**: Ensures optimal viewing experience across different devices.
+- **Modern UI**: Utilizes React.js for interactivity and Tailwind CSS for styling.
 
 ## Technologies Used
 
-- HTML
-- CSS
-- JavaScript
+- React.js
+- Tailwind CSS
+- React Icons
 
 ## Getting Started
 
-To view the PaymentApp Website, simply open the index.html file in your web browser.
-
-Alternatively, you can deploy the website using any static hosting service.
-
-## Usage
-
-- Visit the website to learn more about the PaymentApp.
-- Navigate through different sections to explore its features and benefits.
-
-## Contributing
-
-Contributions are not accepted for this project as it's a static website for information purposes only.
-
-## License
-
-This project is open-source under the [MIT License](LICENSE).
